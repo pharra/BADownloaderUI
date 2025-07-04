@@ -11,7 +11,7 @@ jobs:
   build-macos-version:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Install ExPackages
     #   run: "npm install -D unplugin-vue-components unplugin-auto-import"
@@ -30,7 +30,7 @@ jobs:
   build-windows-version:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
     - name: Install ExPackages
     #   run: "npm install -D unplugin-vue-components unplugin-auto-import"
@@ -49,8 +49,7 @@ jobs:
 
     # - name: Upload to Release Action
     #   # You may pin to the exact commit or the version.
-    #   # uses: Shopify/upload-to-release@c77c9b3e5d288adaef98a7007bf92340ec6ce03b
-    #   uses: Shopify/upload-to-release@v2.0.0
+    #   uses: Shopify/upload-to-release
     #   with:
     #     # Artifact name
     #     name: BiliAudioDownloader-win-amd64.exe
